@@ -2,7 +2,7 @@
 
 This is a fork of Twitter's Snowflake that has been considerably simplified for people not sharing all of Twitter's high end requirements.  For example:
 
-- The Scribe-based audit trails have been removed.
+- Scribe-based audit trails have been removed.
 - Thrift RPC has been replaced by HTTP.
 - Zookeeper coordination has been removed (for now).
 - Maven has been replaced by sbt for compatibility with a standard "sbt clean compile stage" buildpack.
