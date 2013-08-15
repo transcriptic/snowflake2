@@ -3,10 +3,12 @@ import Keys._
 import com.typesafe.sbt.SbtStartScript
 
 object BuildSettings {
+  val buildOrganization = "com.transcriptic"
   val buildVersion      = "1.0.0"
   val buildScalaVersion = "2.10.0"
 
   val buildSettings = Defaults.defaultSettings ++ Seq (
+    organization := buildOrganization,
     version      := buildVersion,
     scalaVersion := buildScalaVersion
   )

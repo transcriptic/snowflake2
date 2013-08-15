@@ -6,6 +6,7 @@ This is a fork of Twitter's Snowflake that has been considerably simplified for 
 - Thrift RPC has been replaced by HTTP.
 - Zookeeper coordination has been removed (for now).
 - Maven has been replaced by sbt for compatibility with a standard "sbt clean compile stage" buildpack.
+- Datacenter IDs have been removed; Worker IDs are enough.
 
 Basically, this is an HTTP server with one route - `GET /id` - that returns a unique directly sortable ID.  You boot the server with one parameter, `workerId`, and you're done.
 
