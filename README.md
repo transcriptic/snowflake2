@@ -9,6 +9,15 @@ This is a fork of Twitter's Snowflake that has been considerably simplified for 
 
 Basically, this is an HTTP server with one route - `GET /id` - that returns a unique directly sortable ID.  You boot the server with one parameter, `workerId`, and you're done.
 
+You can also easily use the ID generator in process:
+
+    import com.transcriptic.snowflake.Worker
+
+    val worker = new Worker(workerId)
+    worker.nextId
+
+And cut out the network latency.
+
 ## Requirements
 
 ### Performance
